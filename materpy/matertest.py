@@ -9,8 +9,6 @@ print(a)
 a = "sss"#可以不同类型赋值
 print(a)
 
-
-
 s1 = (2, 1.3, 'love', 5.6, 9, 12, False)# tuple元组不可变
 print(s1,type(s1))
 s2 = [True, 5, 'smile']#list可以变
