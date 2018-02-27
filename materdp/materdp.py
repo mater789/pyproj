@@ -3,4 +3,4 @@ import json
 try:
     print("ok")
 except:
-    print("error")
+    print("error\n")
