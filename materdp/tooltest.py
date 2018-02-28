@@ -16,25 +16,4 @@ if "accessors" in cLoadDic:
 with open("test2.json", 'w') as cSaveJsonFile:
     json.dump(cLoadDic, cSaveJsonFile)
 
-import os
-import shutil
-
-def CopyDir(strSrcDir, strDestDir):
-    if not os.path.isdir(strSrcDir):
-        raise FileNotFoundError
-    if not os.path.isdir(strDestDir):
-        os.makedirs(strDestDir)
-    cFileNameList = os.listdir(strSrcDir)
-    for strFileName in cFileNameList:
-        strSrcName = os.path.join(strSrcDir, strFileName)
-        strDstName = os.path.join(strDestDir, strFileName)
-        if os.path.isdir(strSrcName):
-            CopyDir(strSrcName, strDstName)
-        elif os.path.isfile(strSrcName):
-            if os.path.isfile(strDstName):
-                os.remove(strDstName)
-            shutil.copy2(strSrcName, strDstName)
-    
-CopyDir("../materpy", "../test/materpy")
-
-#def ExportGit(strGit, )
+	dasdasd

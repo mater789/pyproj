@@ -18,8 +18,8 @@
                 "RedirectOutput"
             ],
             "args": [
-                "https://github.com/mater789/pyproj/materdp/",
-                "e:/pyproj/"
+                "https://github.com/mater789/pyproj/materdp",
+                "e:/pyproj"
             ]
         }
     ]
